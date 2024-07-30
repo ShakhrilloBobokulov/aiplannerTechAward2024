@@ -1,0 +1,79 @@
+{% load static %}
+<section class="mb-10">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light top-fixed bg-white shadow-2 fs-5">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+            <div class="d-flex">
+                <!-- Toggle button -->
+                <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-mdb-collapse-init
+                        data-mdb-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                >
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <!-- Navbar brand -->
+                <a class="navbar-brand ms-3" href="{% url 'homepage'%}">
+                    <img src="{% static 'logo/aiplannerlogo.png'%}" class="rounded-pill" height="45"/>
+                </a>
+            </div>
+
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Left links -->
+                <ul
+                        class="navbar-nav me-auto mb-2 ms-2 ps-1 ms-lg-0 ps-lg-0 mb-lg-0"
+                >
+                    <li class="nav-item">
+                        <a class="nav-link text-black" data-mdb-ripple-init href="{% url 'homepage' %}">Bosh sahifa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" data-mdb-ripple-init href="{% url 'homepage' %}#project">Tizim haqida</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" data-mdb-ripple-init href="{% url 'homepage' %}#features">Afzalliklari</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" data-mdb-ripple-init href="{% url 'homepage' %}#team">Jamoa</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-black" target="_blank"  data-mdb-ripple-init href="{% url 'video' %}">Video</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fw-bold" data-mdb-ripple-init
+                           href="{% url 'sections' %}">BO'LIMLAR</a>
+                    </li>
+                </ul>
+                <!-- Left links -->
+            </div>
+            <!-- Collapsible wrapper -->
+
+            <!-- Right elements -->
+            <div class="d-flex align-items-center">
+                <a type="button" href="#!" class="btn btn-link px-3 mb-1 me-2 fs-6" data-mdb-ripple-init>
+                    Login
+                </a>
+
+                <a type="button" href="#" class="btn btn-primary mb-1 me-lg-3 fs-6" data-mdb-ripple-init>
+                    Register <span class="d-none d-lg-inline-block"></span>
+                </a>
+            </div>
+            <!-- Right elements -->
+        </div>
+        <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Jumbotron -->
+</section>
+<!-- Section: Design Block -->
+
+<!--Main Navigation-->

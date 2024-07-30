@@ -1,0 +1,51 @@
+.logo {
+  display: flex;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  color: #333;
+}
+
+.leaf {
+  margin-right: 10px;
+  position: relative;
+}
+
+.stem {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 2px;
+  height: 20px;
+  background-color: #8BC34A;
+  border-radius: 2px;
+}
+
+.leaf-shape {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #8BC34A;
+}
+
+.text {
+  font-weight: bold;
+}
+
+.text span:first-child {
+  color: #8BC34A;
+}
+
+.text span:last-child {
+  color: #333;
+}
+
+/*MAIN PAGE STYLE*/
+
+
+/*MAIN PAGE STYLE*/

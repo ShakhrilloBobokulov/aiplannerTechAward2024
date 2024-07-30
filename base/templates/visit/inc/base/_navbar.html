@@ -1,0 +1,118 @@
+{% load static %}
+<section class="mb-10" id="home">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light top-fixed bg-white shadow-2 fs-5">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+            <div class="d-flex">
+                <!-- Toggle button -->
+                <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-mdb-collapse-init
+                        data-mdb-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                >
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <!-- Navbar brand -->
+                <a class="navbar-brand ms-3" href="{% url 'homepage'%}">
+                    <img src="{% static 'logo/aiplannerlogo.png'%}" class="rounded-pill" height="45"/>
+                </a>
+            </div>
+
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Left links -->
+                <ul
+                        class="navbar-nav me-auto mb-2 ms-2 ps-1 ms-lg-0 ps-lg-0 mb-lg-0"
+                >
+                    <li class="nav-item">
+                        <a class="nav-link text-black" data-mdb-ripple-init href="#home">Bosh sahifa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" data-mdb-ripple-init href="#project">Tizim haqida</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" data-mdb-ripple-init href="#features">Afzalliklari</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" data-mdb-ripple-init href="#team">Jamoa</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-black" target="_blank" data-mdb-ripple-init href="{% url 'video' %}">Video</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fw-bold" data-mdb-ripple-init href="{% url 'sections' %}">BO'LIMLAR</a>
+                    </li>
+                </ul>
+                <!-- Left links -->
+            </div>
+            <!-- Collapsible wrapper -->
+
+            <!-- Right elements -->
+            <div class="d-flex align-items-center">
+                <a type="button" href="#!" class="btn btn-link px-3 mb-1 me-2 fs-6" data-mdb-ripple-init>
+                    Login
+                </a>
+
+                <a type="button" href="#" class="btn btn-primary mb-1 me-lg-3 fs-6" data-mdb-ripple-init>
+                    Register <span class="d-none d-lg-inline-block"></span>
+                </a>
+            </div>
+            <!-- Right elements -->
+        </div>
+        <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+    <br>
+    <br>
+    <div class="px-4 py-5 px-md-5 bg-light text-center text-lg-start">
+        <!-- Jumbotron -->
+        <div class="container">
+            <div class="row gx-lg-5 align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <h1 class="my-5 display-3 fw-bold ls-tight">
+                        <span class="text-primary">AI Planner bilan</span><br/>
+                        interyer dizayn oson
+                    </h1>
+                    <p class="lead fs-4 mb-4">
+                        Sun'iy intellekt va neyron tarmoqlar tizimi yordamida siz o'z uyingizni ichki va tashqi dizaynlarini va
+                        jihozlanishini professional ko'rinishga keltiruvchi StartUp loyihasi.
+                    </p>
+                    <a
+                            class="btn btn-primary btn-lg py-3 px-5 mb-2 mb-md-0 me-md-2 btn-rounded fs-4" data-mdb-ripple-init
+                            href="{% url 'design' %}"
+                            role="button"
+                    >Hoziroq sinab ko'ring</a>
+
+                    <a
+                            class="btn btn-link btn-lg py-3 px-5  fs-4" data-mdb-ripple-init
+                            data-ripple-color="primary"
+                            href="{% url 'video' %}"
+                            role="button"
+
+                    >Video</a>
+                </div>
+
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <img
+                            src="{% static 'ai/main/intro2.png' %}"
+                            class="w-100 rounded-4"
+                            alt=""
+                    />
+                </div>
+            </div>
+        </div>
+    </div>
+    <span id="project"></span>
+    <!-- Jumbotron -->
+</section>
+<!-- Section: Design Block -->
+
+<!--Main Navigation-->

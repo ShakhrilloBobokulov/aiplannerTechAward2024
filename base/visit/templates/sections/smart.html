@@ -1,0 +1,180 @@
+{% extends 'visit/basesections.html' %}
+{% load static %}
+
+{% block title %}
+{{ title }}
+{% endblock title %}
+
+
+{% block content %}
+
+<!-- Container for demo purpose -->
+
+<!-- Container for demo purpose -->
+<!--Main layout-->
+<!-- Container for demo purpose -->
+<!-- Container for demo purpose -->
+<div class="container my-5 py-5">
+
+    <!-- Section: Design Block -->
+    <section class="mb-3 text-center">
+        <h2 class="fw-bold mb-7 text-center">Aqlli tanlov texnologiyasi </h2>
+
+        <div class="row gx-lg-5">
+            <div class="col-lg-4 col-md-12 mb-6">
+                <div
+                        id="carouselVideoExample"
+                        data-mdb-carousel-init class="carousel slide carousel-fade mb-5"
+                        data-mdb-ride="carousel"
+                >
+                    <!-- Inner -->
+                    <div class="carousel-inner shadow-5-strong">
+                        <!-- Single item -->
+                        <div class="carousel-item active shadow-5-strong">
+                            <video class="img-fluid" autoplay loop muted>
+                                <source src="{% static 'ai/sections/smart/video.mp4'%}"
+                                        type="video/mp4"/>
+                            </video>
+
+                        </div>
+
+
+                    </div>
+                    <!-- Inner -->
+
+                    </button>
+                </div>
+
+                <ul class="list-group list-group-light fs-5" style="text-align: left;">
+                    <li class="list-group-item">Formani to'ldinring</li>
+                    <li class="list-group-item">Dizaynlarni tanlang</li>
+                    <li class="list-group-item">O'lchamlarni belgilang</li>
+                    <li class="list-group-item">Start tugmasi bosing</li>
+                </ul>
+            </div>
+
+            <div class="col-lg-4 mb-6">
+                <div class="shadow-4-strong">
+                    <form class="p-3">
+                        <h4>Formani to'ldiring</h4>
+                        <!-- Text input for House Name/Identifier -->
+                        <div data-mdb-input-init class="form-outline mb-4">
+                            <input type="text" id="houseName" class="form-control"/>
+                            <label class="form-label" for="houseName">Uy idenfikatori</label>
+                        </div>
+
+                        <!-- Number input for Total Area (square feet/meters) -->
+                        <div data-mdb-input-init class="form-outline mb-4">
+                            <input type="number" id="totalArea" class="form-control"/>
+                            <label class="form-label" for="totalArea">Maydoni(m²)</label>
+                        </div>
+
+                        <!-- Number input for Number of Floors -->
+                        <div data-mdb-input-init class="form-outline mb-4">
+                            <input type="number" id="numFloors" class="form-control"/>
+                            <label class="form-label" for="numFloors">Qavati</label>
+                        </div>
+
+                        <!-- Number input for Number of Bedrooms -->
+                        <div data-mdb-input-init class="form-outline mb-4">
+                            <input type="number" id="numBedrooms" class="form-control"/>
+                            <label class="form-label" for="numBedrooms">Yotoqxonalar soni</label>
+                        </div>
+
+                        <!-- Number input for Number of Bathrooms -->
+                        <div data-mdb-input-init class="form-outline mb-4">
+                            <input type="number" id="numBathrooms" class="form-control"/>
+                            <label class="form-label" for="numBathrooms">Sanuzellar soni</label>
+                        </div>
+
+                        <!-- Number input for Number of Living Rooms -->
+                        <div data-mdb-input-init class="form-outline mb-4">
+                            <input type="number" id="numLivingRooms" class="form-control"/>
+                            <label class="form-label" for="numLivingRooms">Mehmonlar xonasi soni</label>
+                        </div>
+
+                        <div id="dnd-custom-default-msg" class="file-upload-wrapper">
+                            <input
+                                    type="file"
+                                    class="file-upload-input"
+                                    data-mdb-default-msg="Chizmani yuklang"
+                                    data-mdb-file-upload-init
+                            />
+                        </div>
+
+                        <!-- Checkbox input for Additional Rooms -->
+
+
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mb-6 ">
+                <div class="shadow-4-strong">
+                    <form class="p-3">
+                        <h4>Qo'shimcha xonalarni tanlang</h4>
+                        <!-- 2 column grid layout with text inputs for the first and last names -->
+                        <div class="form-check mb-2 " style="text-align: left;">
+                            <input class="form-check-input" type="checkbox" value="" id="hasKitchen"/>
+                            <label class="form-check-label" for="hasKitchen">Oshxona</label>
+                        </div>
+                        <div class="form-check mb-2 " style="text-align: left;">
+                            <input class="form-check-input" type="checkbox" value="" id="hasDiningRoom"/>
+                            <label class="form-check-label" for="hasDiningRoom">Ovqatlanish hududi</label>
+                        </div>
+                        <div class="form-check mb-2 " style="text-align: left;">
+                            <input class="form-check-input" type="checkbox" value="" id="hasOffice"/>
+                            <label class="form-check-label" for="hasOffice">Ofis zona</label>
+                        </div>
+
+                        <div class="form-check mb-2 " style="text-align: left;">
+                            <input class="form-check-input" type="checkbox" value="" id="hasAttic"/>
+                            <label class="form-check-label" for="hasAttic">Chordoq</label>
+                        </div>
+                        <div class="form-check mb-2 " style="text-align: left;">
+                            <input class="form-check-input" type="checkbox" value="" id="hasPatio"/>
+                            <label class="form-check-label" for="hasPatio">Balkon</label>
+                        </div>
+
+                        <div class="form-outline mb-4">
+                            <label class="form-label" for="designStyle">Dizayn uslubini tanlang</label>
+                            <select id="designStyle" class="form-select">
+                                <option value="modern">Modern</option>
+                                <option value="traditional">Traditional</option>
+                                <option value="contemporary">Contemporary</option>
+                                <option value="minimalist">Minimalist</option>
+                                <option value="industrial">Industrial</option>
+                                <option value="scandinavian">Scandinavian</option>
+                                <option value="bohemian">Bohemian</option>
+                                <option value="rustic">Rustic</option>
+                            </select>
+                        </div>
+
+                        <div class="color-picker mb-2" data-mdb-color-picker-init data-mdb-color-picker-color-palette="false"></div>
+
+                        <!-- Message input for Additional Information -->
+                        <div data-mdb-input-init class="form-outline mb-4">
+                            <textarea class="form-control" id="additionalInfo" rows="3"></textarea>
+                            <label class="form-label" for="additionalInfo">Qo'shimcha informatsiya</label>
+                        </div>
+
+
+
+
+
+                        <!-- Submit button -->
+                        <button data-mdb-ripple-init type="button" class="btn btn-primary btn-block mb-4 fs-5">Start
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- Section: Design Block -->
+
+</div>
+<!-- Container for demo purpose -->
+<!-- Container for demo purpose -->
+{% endblock %}

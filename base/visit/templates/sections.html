@@ -1,0 +1,225 @@
+{% extends 'visit/basesections.html' %}
+{% load static %}
+
+{% block title %}
+{{ title }}
+{% endblock title %}
+
+
+{% block content %}
+
+<!-- Container for demo purpose -->
+
+<!-- Container for demo purpose -->
+<!--Main layout-->
+<!-- Container for demo purpose -->
+<!-- Container for demo purpose -->
+<div class="container my-5 py-5">
+
+    <!-- Section: Design Block -->
+    <section class="mb-3 text-center">
+        <h2 class="fw-bold mb-7 text-center">Tizimning taqdim etadigan yo'nalishlari</h2>
+
+        <div class="row gx-lg-5">
+            <div class="col-lg-4 col-md-12 mb-6">
+                <div class="card shadow-4-strong">
+                    <div
+                            class="bg-image hover-overlay rounded mx-3"
+                            data-mdb-ripple-color="light" data-mdb-ripple-init
+                            style="margin-top: -15px"
+                    >
+                        <img
+                                src="{% static 'ai/sections/plan1.webp' %}"
+                                class="img-fluid"
+                        />
+                        <a href="#!">
+                            <div
+                                    class="mask"
+                                    style="background-color: rgba(251, 251, 251, 0.15)"
+                            ></div>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Chizmadan dizaynga</h5>
+
+                        <p class="card-text" style="text-align: justify !important;">
+                            Uyingizni yoki xonangizni chizmasini tizimga yuklang.
+                            Tizim yuklangan jpg yoki png faylni skaner qilib,
+                            xona dizaynini 2D ko'rinishda sizga dizaynlab beradi.
+                        </p>
+                        <a href="{% url 'design'%}" class="btn btn-outline-primary btn-rounded fs-6" data-mdb-ripple-color="dark" data-mdb-ripple-init>
+                            Chizmadan dizaynga
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mb-6 ">
+                <div class="card shadow-4-strong">
+                    <div
+                            class="bg-image hover-overlay rounded mx-3"
+                            data-mdb-ripple-color="light" data-mdb-ripple-init
+                            style="margin-top: -15px"
+                    >
+                        <img
+                                src="{% static 'ai/sections/plan2.webp' %}"
+                                class="img-fluid"
+                        />
+                        <a href="#!">
+                            <div
+                                    class="mask"
+                                    style="background-color: rgba(251, 251, 251, 0.15)"
+                            ></div>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Aqlli tanlov</h5>
+                        <p class="card-text" style="text-align: justify !important;">
+                            Ushbu texnologiya korobka ko'rinishidagi uy ma'lumotlarini kiritish so'raladi,
+                            qanday xonalar bo'lishi bo'yicha savol javob o'tkaziladi. Aqqli tizim algoritmlar yordamida
+                            eng optimal tanlovni foydalanuvchiga taqdim etadi.
+                        </p>
+                        <a href="{% url 'smart'%}" class="btn btn-outline-primary btn-rounded fs-6" data-mdb-ripple-color="dark" data-mdb-ripple-init>
+                            Aqlli tanlov
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mb-6 ">
+                <div class="card shadow-4-strong">
+                    <div
+                            class="bg-image hover-overlay rounded mx-3"
+                            data-mdb-ripple-color="light" data-mdb-ripple-init
+                            style="margin-top: -15px"
+                    >
+                        <img
+                                src="{% static 'ai/sections/plan3.webp' %}"
+                                class="img-fluid"
+                        />
+                        <a href="#!">
+                            <div
+                                    class="mask"
+                                    style="background-color: rgba(251, 251, 251, 0.15)"
+                            ></div>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Holatlar uchun kategoriyalar</h5>
+                        <p class="card-text" style="text-align: justify !important;">
+                            Sizdan xonaning rasmini, o'lchamini hamda nima maqsadda foydalanilishini kiritish so'raladi.
+                            Tizimimiz sizga eng unumli planlashtirish variantlarini taklif qiladi.
+                        </p>
+                        <a href="#!" class="btn btn-outline-primary btn-rounded fs-6" data-mdb-ripple-color="dark" data-mdb-ripple-init>
+                            Formaga o'tish
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12 mb-6">
+                <div class="card shadow-4-strong">
+                    <div
+                            class="bg-image hover-overlay rounded mx-3"
+                            data-mdb-ripple-color="light" data-mdb-ripple-init
+                            style="margin-top: -15px"
+                    >
+                        <img
+                                src="{% static 'ai/sections/plan4.webp' %}"
+                                class="img-fluid"
+                        />
+                        <a href="#!">
+                            <div
+                                    class="mask"
+                                    style="background-color: rgba(251, 251, 251, 0.15)"
+                            ></div>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Jihozlashtirish</h5>
+                        <p class="card-text" style="text-align: justify !important;">
+                            Xonangizning o'lchamlarini tizim bilan bo'lishing, sizning didingiz bo'yicha tizim avtomatik
+                            jihozlashtirish takliflarini siz uchun ishlab chiqadi. Mebellarning o'lchamlari bilan sizga
+                            yakuniy natija taqdim etiladi.
+                        </p>
+                        <a href="#!" class="btn btn-outline-primary btn-rounded fs-6" data-mdb-ripple-color="dark" data-mdb-ripple-init>
+                            Jihozlashtirish
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mb-6 ">
+                <div class="card shadow-4-strong">
+                    <div
+                            class="bg-image hover-overlay rounded mx-3"
+                            data-mdb-ripple-color="light" data-mdb-ripple-init
+                            style="margin-top: -15px"
+                    >
+                        <img
+                                src="{% static 'ai/sections/plan5.webp' %}"
+                                class="img-fluid"
+                        />
+                        <a href="#!">
+                            <div
+                                    class="mask"
+                                    style="background-color: rgba(251, 251, 251, 0.15)"
+                            ></div>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">3D natija</h5>
+                        <p class="card-text" style="text-align: justify !important;">
+                            Uyingiz dizaynlash bo'yicha tizim bilan so'rovnomani to'ldiring. Renderlash funksiyasidan foydalaning.
+                            Tayyor bo'lgan 3D maket ichida siz sayr qilishingiz mumkin.
+                            Yakuniy natijani VR texnologiyasiga integratsiya qilish masalasi ham mutaxasisslar bilan muhokama qilinmoqda.
+                        </p>
+                        <a href="#!" class="btn btn-outline-primary btn-rounded fs-6" data-mdb-ripple-color="dark" data-mdb-ripple-init>
+                            3D natija
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mb-6 ">
+                <div class="card shadow-4-strong">
+                    <div
+                            class="bg-image hover-overlay  rounded mx-3"
+                            data-mdb-ripple-color="light" data-mdb-ripple-init
+                            style="margin-top: -15px"
+                    >
+                        <img
+                                src="{% static 'ai/sections/plan6.webp' %}"
+                                class="img-fluid"
+                        />
+                        <a href="#!">
+                            <div
+                                    class="mask"
+                                    style="background-color: rgba(251, 251, 251, 0.15)"
+                            ></div>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Uyni skanerlash</h5>
+
+                        <p class="card-text" style="text-align: justify !important;">
+                            Amazon servislaridan ilhomlangan holda taqdim etilayotgan xizmat turi bo'lib, telefoningiz orqali, uyingizni skanerlab tizimga yuklang.
+                            O'zgacha natijani bizdan kutib qoling.
+                        </p>
+                        <a href="#!" class="btn btn-outline-primary btn-rounded fs-6" data-mdb-ripple-color="dark" data-mdb-ripple-init>
+                            Skanerlash
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- Section: Design Block -->
+
+</div>
+<!-- Container for demo purpose -->
+<!-- Container for demo purpose -->
+{% endblock %}

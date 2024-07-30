@@ -1,0 +1,311 @@
+{% extends 'visit/base.html' %}
+{% load static %}
+
+{% block title %}
+{{ title }}
+{% endblock title %}
+
+
+{% block content %}
+
+<!-- Container for demo purpose -->
+
+<!-- Container for demo purpose -->
+<!--Main layout-->
+<main class="mt-5 mb-6">
+    <div class="container">
+        <!-- Section: Cart -->
+        <section class="row gx-lg-5 mb-8">
+            <p class="text-muted text-uppercase small">Yuqori samaradorlik</p>
+            <h2 class="fw-bold pb-1">AI Planner</h2>
+            <p class="lead fw-normal text-muted mb-4">
+                Ushbu yangi startup loyihasi bilan siz interyer dizayn va 3D modellashtirish bilim ko'nikmalarisiz
+                uyingizni yoki ofisingizni o'z fantaziyangizdan kelib chiqib professional darajada planirovka qilish
+                imkoniyatiga egasiz.
+            </p>
+            <div class="mb-5">
+
+                <div class="d-flex justify-content-between mb-3">
+                    <div class="d-flex align-items-center">
+                        <ul class="rating mb-2" data-mdb-rating-init data-mdb-readonly="true" data-mdb-value="4">
+                            <li>
+                                <i class="far fa-star fa-sm text-primary ps-0" title="Bad"></i>
+                            </li>
+                            <li>
+                                <i class="far fa-star fa-sm text-primary" title="Poor"></i>
+                            </li>
+                            <li>
+                                <i class="far fa-star fa-sm text-primary" title="OK"></i>
+                            </li>
+                            <li>
+                                <i class="far fa-star fa-sm text-primary" title="Good"></i>
+                            </li>
+                            <li>
+                                <i class="far fa-star fa-sm text-primary" title="Excellent"></i>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button type="button" class="btn btn-primary btn-rounded fw-bold fs-6" data-mdb-ripple-init>
+                        Chizmani yuklash
+                    </button>
+
+                    <div class="d-flex align-items-center">
+                        <a href="#!"><i class="fas fa-share me-2"></i></a>
+                        <a href="#!"><i class="fab fa-facebook me-2"></i></a>
+                        <a href="#!"><i class="fab fa-twitter me-2"></i></a>
+                        <a href="#!"><i class="fas fa-rss"></i></a>
+                    </div>
+                </div>
+                <p class="small text-muted mb-0 fw-bold">Rank: 4.1/5 out of 11250 votes</p>
+            </div>
+            <hr class="mb-5">
+            <div class="mb-4">
+                <div class="">
+                    <div class="modal-body p-4">
+                        <div class="row">
+
+                            <div class="col-xl-5 col-lg-5 fs-5">
+
+                                <div class="row">
+                                    <div class="col-xl-10">
+                                        <!--                                <p class="mb-4">Introducing Planner 5D's AI Room Planner, a cutting-edge tool revolutionizing interior design. -->
+                                        <p class="mb-4">2D va 3D ko'rinishda AI yordamida xonalarni planirovka qilish,
+                                            o'ziga
+                                            xos innovatsion interyer dizayn start up loyihasi.
+                                            Suniy intellekt texnologiyalari asosida ishlovchi zamonaviy platforma
+                                            foydalanuvchilardan interyer dizayn bo'yicha chuqur bilim bo'lishini talab
+                                            qilmaydi.</p>
+                                        <p class="mb-4">
+                                            Tizim AI/ML, AR, Computer Vision, 3D modelling, NLP va Cloud Computing
+                                            texnologiyalari asosida ishlaydi.
+                                            Shunchaki xonangiz chizmasini yuklang, yakuniy dizayn natijaga ega bo'ling.
+                                            Tizim siz bilan so'rovnoma qilish orqali esa sizning xohish istaklaringizga
+                                            mos keladigan dizayn ko'rinishlarini taqdim etadi.
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div class="col-xl-7 col-lg-6 mb-4 mb-lg-0">
+                                <!-- Carousel wrapper -->
+                                <div
+                                        id="carouselVideoExample"
+                                        data-mdb-carousel-init class="carousel slide carousel-fade"
+                                        data-mdb-ride="carousel"
+                                >
+                                    <!-- Inner -->
+                                    <div class="carousel-inner shadow-5-strong">
+                                        <!-- Single item -->
+                                        <div class="carousel-item active shadow-5-strong">
+                                            <video class="img-fluid" autoplay loop muted>
+                                                <source src="{% static 'construct/video/vid1.mp4'%}"
+                                                        type="video/mp4"/>
+                                            </video>
+                                        </div>
+
+
+                                    </div>
+                                    <!-- Inner -->
+
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <span id="features"></span>
+        </section>
+
+        <section class="mb-8">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h3 class="mb-5 pb-3">Afzalliklar</h3>
+                </div>
+            </div>
+            <div class="row gx-lg-5">
+                <div class="col-md-6 col-xl-3 mb-5 mb-xl-0">
+                    <p class="h2 mb-3" style="color: transparent; -webkit-text-stroke: 2px #03045e">
+                        <i class="fas fa-lightbulb"></i>
+                    </p>
+                    <p class="h5">Kreativ natijalar</p>
+                    <hr class="hr"/>
+                    <p>Tizim bir qancha savollar orqali foydalanuvchining xohish istaklarini
+                        o'rganib chiqadi, hamda uning istaklariga mos samarali takliflarni taqdim qiladi.
+                    </p>
+                </div>
+                <div class="col-md-6 col-xl-3 mb-5 mb-xl-0">
+                    <p class="h2 mb-3" style="color: transparent; -webkit-text-stroke: 2px #03045e">
+                        <i class="far fa-clock"></i>
+                    </p>
+                    <p class="h5">Vaqt unumdorligi</p>
+                    <hr class="hr"/>
+                    <p>AI Planner dizayn ishlab chiqish jarayonini tezkor avtomatlashtirilgan takliflar taqdim etish
+                        orqali jadallashtiradi, foydalanuvchilarga visual yechimlar taklif etadi.</p>
+                </div>
+                <div class="col-md-6 col-xl-3 mb-5 mb-md-0">
+                    <p class="h2 mb-3" style="color: transparent; -webkit-text-stroke: 2px #03045e">
+                        <i class="fas fa-gears"></i>
+                    </p>
+                    <p class="h5">Detallardagi moslik</p>
+                    <hr class="hr"/>
+                    <p>Xonaning foydalanish maqsadi va kerakli jihozlardan kelib chiqib ulardagi ranglar uyg’unligi va
+                        moslashuvi alohida hisobga olinadi. Estetik go’zallikka e’tibor beriladi.</p>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <p class="h2 mb-3" style="color: transparent; -webkit-text-stroke: 2px #03045e">
+                        <i class="fas fa-laptop-code"></i>
+                    </p>
+                    <p class="h5">Visualizatsiya</p>
+                    <hr class="hr"/>
+                    <p>Bizning AI komponentalarimiz 5D o’lchamgacha bo’lgan yakuniy natijalarni taqdim etishi ko’zda
+                        tutilgan.
+                        Ushbu natijalarni VR texnologiyasiga integratsiya qilish masalasi ko’rib chiqilmoqda.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-10 text-center" id="team">
+            <h2 class="fw-bold mb-10"><u class="text-primary">Binary Brigade</u> jamoasi</h2>
+
+            <div class="row gx-lg-5">
+                <div class="col-lg-3 mb-10 mb-lg-0">
+                    <div class="card shadow-2 h-100">
+                        <div
+                                class="d-flex justify-content-center"
+                                style="margin-top: -75px"
+                        >
+                            <img
+                                    src="{% static 'ai/user.png' %}"
+                                    class="rounded-circle shadow-5-strong"
+                                    alt=""
+                                    style="width: 150px"
+                            />
+                        </div>
+                        <div class="card-body">
+                            <h5 class="fw-bold">Shaxrillo Boboqulov</h5>
+                            <p class="text-muted">Product manager</p>
+                            <ul class="list-unstyled mb-0">
+                                <a href="#!" class="px-1">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#!" class="px-1">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#!" class="px-1">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 mb-10 mb-lg-0">
+                    <div class="card shadow-2 h-100">
+                        <div
+                                class="d-flex justify-content-center"
+                                style="margin-top: -75px"
+                        >
+                            <img
+                                    src="{% static 'ai/user.png' %}"
+                                    class="rounded-circle shadow-5-strong"
+                                    alt=""
+                                    style="width: 150px"
+                            />
+                        </div>
+                        <div class="card-body">
+                            <h5 class="fw-bold">Shoxrux Shokirov</h5>
+                            <p class="text-muted">Backend dasturchi</p>
+                            <ul class="list-unstyled mb-0">
+                                <a href="#!" class="px-1">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="#!" class="px-1">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#!" class="px-1">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 mb-10 mb-lg-0">
+                    <div class="card shadow-2 h-100">
+                        <div
+                                class="d-flex justify-content-center"
+                                style="margin-top: -75px"
+                        >
+                            <img
+                                    src="{% static 'ai/user.png' %}"
+                                    class="rounded-circle shadow-5-strong"
+                                    alt=""
+                                    style="width: 150px"
+                            />
+                        </div>
+                        <div class="card-body">
+                            <h5 class="fw-bold">Abdurahmon Sadullayev</h5>
+                            <p class="text-muted">Frontend dasturchi</p>
+                            <ul class="list-unstyled mb-0">
+                                <a href="#!" class="px-1">
+                                    <i class="fab fa-dribbble"></i>
+                                </a>
+                                <a href="#!" class="px-1">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#!" class="px-1">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 mb-10 mb-lg-0">
+                    <div class="card shadow-2 h-100">
+                        <div
+                                class="d-flex justify-content-center"
+                                style="margin-top: -75px"
+                        >
+                            <img
+                                    src="{% static 'ai/user2.jpg' %}"
+                                    class="rounded-circle shadow-5-strong"
+                                    alt=""
+                                    style="width: 150px"
+                            />
+                        </div>
+                        <div class="card-body">
+                            <h5 class="fw-bold">Shaxnoza Amonova</h5>
+                            <p class="text-muted">Dizayner</p>
+                            <ul class="list-unstyled mb-0">
+                                <a href="#!" class="px-1">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="#!" class="px-1">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#!" class="px-1">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- Section: Design Block -->
+
+
+        <!-- Section: Cart -->
+    </div>
+</main>
+<!--Main layout-->
+
+{% endblock %}
